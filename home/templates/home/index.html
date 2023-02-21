@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+{% block content %}
+<h1>Home Page</h1>
+<h3>{{today}}</h3>
+
+<a href="{% url 'notes.list' %}" class="btn btn-primary">Check out the lectures on Django</a>
+{% endblock content %}
+
